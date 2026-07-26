@@ -1,0 +1,2 @@
+* for and while are forward checking looping options they check the starting condition for loop and then if the condition is valid body is run and updation happens
+* do while first does the body statements and then checks for a termination condition
