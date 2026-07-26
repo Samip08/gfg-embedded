@@ -1,0 +1,3 @@
+- Memory is allocated but not released 
+- If a pointer to allocated memory is overwritten or goes out of scope without freeing, the memory it pointed to becomes unreachable.
+- In long-running programs, even small leaks add up over time. This gradually eats up system memory, making the program slow or crash.
