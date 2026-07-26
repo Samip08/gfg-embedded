@@ -1,0 +1,6 @@
+* main isnt called by the user but the os itself , arguments are passed via argc( argument count ), argv(vector of pointers to the arguments), this allows getting dynamic input at runtime without updating source code, useful for automation
+* if you used scanf, you have to manually keyboard enter into terminal value every time, but for automation you can write shell script to unload these values as arguments directly into the main function one by one so no need for keyboard intervention
+* generally count for argc is taken as 1 for name of program, always check for argc>=2, as incase of no input argv[0]= name of program, argv[1] = NULL, otherwise if manually input value of argument the argv[1] holds the argument
+* int main(int argc, char * argv[]) always check if argc == 1 the value in it is the name of the file, otherwise its the arguments you passed, via terminal while executing code , like main.exe word1 word2 then the argv has values main word1 word2
+* these values are stored as character arrays so to convert them into integers incase you pass numbers its supposed to be atoi(argv[2]) include stdlib for that
+* better than just a file read as it removes a whole lotta garbage syntax, and pushes all data into ram at once instead of a file having to do read and writes constantly
